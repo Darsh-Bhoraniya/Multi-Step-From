@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Multi-Step Form Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based multi-step form that uses the **Formik** library for handling form state, **Yup** for schema validation, and **React-Bootstrap** for responsive and styled components.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Multi-step form navigation
+- Form validation using Yup
+- Responsive layout using Bootstrap
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: JavaScript library for building user interfaces.
+- **Formik**: A React library for building forms with validation and state management.
+- **Yup**: Schema-based validation for JavaScript objects, used for form validation.
+- **React-Bootstrap**: Bootstrap components built with React.
+- **React Router**: For navigation between different steps of the form.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+The form is divided into three main components, each representing a step in the multi-step form:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. **PersonalInformation**
+This is the first step of the form, where users input their basic personal information such as:
+- First Name
+- Last Name
+- Date of Birth
 
-### `npm run build`
+This component collects the user's basic details.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. **EducationDetails**
+The second step of the form, where users provide their education details. This includes:
+- Highest Qualification
+- Institution Name
+- Year of Graduation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This component collects the user's educational background.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. **ContactDetails**
+The final step of the form, where users enter their contact details such as:
+- Email Address
+- Phone Number
+- Address (Optional)
 
-### `npm run eject`
+This component collects the user's contact information and concludes the form submission.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get started with the project, follow the steps below:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 1: Clone the repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Clone the repository to your local machine:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/your-username/multi-step-form.git
