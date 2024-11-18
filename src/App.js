@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MultiStepForm from './components/MultiStepForm';  // Assuming your form component is here
+import PersonalInformation from './components/PersonalInformation';  // Your Personal Detail page component
+import ContactDetails from './components/ContactDetails';  // Your Contact Details page component
+import EducationDetails from './components/EducationDetails';  // Your Education Details page component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<MultiStepForm />} />
+          <Route path="/PersonalInformation" element={<PersonalInformation />} />
+          <Route path="/ContactDetails" element={<ContactDetails />} />
+          <Route path="/EducationDetails" element={<EducationDetails />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
